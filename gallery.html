@@ -1,0 +1,330 @@
+<!--COMP 20030 Web Design Assignment-->
+<!--The home page of a fitness club/group-->
+
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8"/>
+			<!-- Set the viewport of the page, which will give the browser instructions on how to control the page's dimensions and scalling-->
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!--Create an icon on the browser tab-->
+			<link rel="icon" type="image/x-icon" href="media/club_icon.png"/>
+			<title>Motivation Sport &amp; Fitness Club - Gallery</title>
+			<!--link to the external style sheet called styles.css-->
+			<link rel="stylesheet" href="styles.css">
+			<!--link to the external JavaScript File called assignment_js.js
+			<script src="assignment_js.js"></script>-->
+			<!--Add in online icon library-->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			
+		<!--
+			========== HTML5 Browser Support ==========
+			- HTML5 defines eight new semantic elements (block-level elements)
+			- IE8 (or earlier versions) doesn't allow styling of unknown elements
+			- By using HTML5Shiv created by Sjoerd Visscher, which is a JavaScript workaround to enable styling of HTML5 elements in versions of Internet Explorer prior to version 9
+			- It provides compatibility for the IE Browsers older than IE 9
+		-->
+
+			<!--[if lt IE 9]>
+				<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<![endif]-->
+		
+		</head>
+			<body>
+				<!--===== Whole page section =====-->
+				<div class="page" id="whole_page">
+					<!--===============================
+								Header Section
+					=================================-->
+					<!--Testing for the fixed header-->
+					<header class="page-header">
+						<section class="header-background">
+						<div class="border-header" id="border-header">
+							<div class="left-header" id="icon_link_homepage">
+								<!--Create a header icon with home page link at the left hand side-->
+								<a href="main_page.html" title="Back to Home Page">
+									<img src="media/MotivationLogo.png" alt="Motivation Sport & Fitness Club" id="logo"/>
+								</a>
+							</div>
+							<!--Create a Contact with tel and email-->
+							<div class="right-header" id="contact_info">
+									<div style="color:white;">
+										<br>
+										<h4 style="margin-bottom:10px;">Contact:</h4>
+										Tel:<a href="tel:01-23456789" id="contact-number" title="Tel">01-23456789</a> | <a href="mailto:motivation@sportandfitness.ie" id="email" title="Email">motivation@sportandfitness.ie</a>
+									</div>
+							</div>
+						</div>
+						</section>
+					</header>
+					<!--=====End of header setting=====-->
+					
+					<!--=====Navigation Start=====-->
+						<div class="navigation" id="navigation_menu">
+							<a href="main_page.html" accesskey="h">Home Page</a>
+							<a href="gallery.html" accesskey="g">Gallery</a>
+							<a href="fitness-class-table.html" accesskey="f">Fitness Class Timetable</a>
+							<a href="location.html" accesskey="l">Location</a>
+							<a href="membership.html" accesskey="m">Membership</a>
+							<a href="contact_us.html" accesskey="c">Contact Us</a> 
+						</div>
+					<!--======Navigation End=====-->
+					
+				<!--Web Page Title-->
+				<section class="background-blank-page">
+					<h2 id="top-title"><b>Motivation Sport and Fitness Club</b></h2>
+					<!-- Content : Slide show Gallery -->
+					<h2 style="text-align:center;font-size: 30px;"> The facilities and activities in our club </h2>
+					
+			<h3 style="text-align: center;font-size: 25px;text-decoration:underline;"> Indoor Facilities </h3>
+			
+			<div class="slideshow-container">
+				<div class="mySlides1">
+					<div class="numbertext">1 / 5</div>
+					<img src="media/gym1.jpg" style="width:100%" alt="View from Entrance : Full of Exercise Bikes and Runner Treadmills, which is the best for cardiovascular exercise!">
+					<div class="text">View from Entrance : Full of Exercise Bikes and Runner Treadmills, which is the best for cardiovascular exercise!</div>
+				</div>
+
+				<div class="mySlides1">
+					<div class="numbertext">2 / 5</div>
+					<img src="media/gym2.jpg" style="width:100%" alt="Weight Area : Built up your muscles with those dumbbells, multi-purpose benches and many more strength-training equipments!">
+					<div class="text">Weight Area : Built up your muscles with those dumbbells, multi-purpose benches and many more strength-training equipments!</div>
+				</div>
+
+				<div class="mySlides1">
+					<div class="numbertext">3 / 5</div>
+					<img src="media/gym3.jpg" style="width:100%" alt="Dumbbells with different weights: Enhance your muscle performance with the increase of bell weights!">
+					<div class="text">Dumbbells with different weights: Enhance your muscle performance with the increase of bell weights!</div>
+				</div>
+				
+				<div class="mySlides1">
+					<div class="numbertext">4 / 5</div>
+					<img src="media/gym4.jpg" style="width:100%" alt="Treadmill : Worries about the bad weather that have to stop daily running today? Why don't you try to exercise here? Treadmills allow you to run indoor, and choose the speed that suit you the most, without concerning the weather condition!">
+					<div class="text">Treadmill : Worries about the bad weather that have to stop daily running today? Why don't you try to exercise here? Treadmills allow you to run indoor, and choose the speed that suit you the most, without concerning the weather condition!</div>
+				</div>
+				
+				<div class="mySlides1">
+					<div class="numbertext">5 / 5</div>
+					<img src="media/gym5.jpg" style="width:100%" alt="Exercise Cycles: You can enjoy your favorite sport channels while you are exercising, that you won't miss any live competition here!">
+					<div class="text">Exercise Cycles: You can enjoy your favorite sport channels while you are exercising, that you won't miss any live competition here!</div>
+				</div>
+				
+				<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+			</div>
+			
+			<!-- Content: Images by using responsive position -->
+				<h3 style="text-align: center;text-decoration: underline;font-size:25px;">Fitness Class Exercise</h3>
+				<p class="container" style="font-size:18px;">We have various fitness classes everyday during opening hours, which is under the guidance of our professional trainers, that help you to use the right way to exercise and make it an effective improvement on your body strength and health! Here are some example about our fitness class: HIIT Circuit Workout, Functional Training, Pilates, Body Sculpt and more!<br><b>Try it out and you won't regret!</b></p>
+				
+				<div style="display : inline-block">	
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="media/fitness_class1.jpg">
+								<img src="media/fitness_class1.jpg" alt="Aerobatic Fitness Class 1 : Hip-hop " width="300" height="200">
+							</a>
+							<div class="description"> 			
+								Aerobic Exercise 1 : Hip-Hop
+							</div>
+						</div>
+					</div>
+					
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="media/fitness_class2.jpg">
+								<img src="media/fitness_class2.jpg" alt="Aerobatic Fitness Class 2" width="300" height="200">
+							</a>
+							<div class="description"> 			
+								Aerobic Exercise 2 
+							</div>
+						</div>
+					</div>
+					
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="media/fitness_class3.jpg">
+								<img src="media/fitness_class3.jpg" alt="Aerobatic Fitness Class 3 : Cycling" width="300" height="200">
+							</a>
+							<div class="description"> 			
+								Aerobic Exercise 3 : Cycling 
+							</div>
+						</div>
+					</div>
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="media/fitness_class4.jpg">
+								<img src="media/fitness_class4.jpg" alt="Aerobatic Fitness Class 4 : Russian Twist" width="300" height="200">
+							</a>
+							<div class="description"> 			
+								Aerobic Exercise 4 : Russian Twist
+							</div>
+						</div>
+					</div>
+					
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="media/fitness_class5.jpg">
+								<img src="media/fitness_class5.jpg" alt="Aerobatic Fitness Class : Squat and Lift " width="600" height="400">
+							</a>
+							<div class="description"> 			
+								Aerobic Exercise 5 : Squat and Lift
+							</div>
+						</div>
+					</div>
+					
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="media/fitness_class5.jpg">
+								<img src="media/cycling.jpg" alt="Aerobatic Fitness Class : Cycling " width="600" height="400">
+							</a>
+							<div class="description"> 			
+								Aerobatic Exercise 6 : Cycling
+							</div>
+						</div>
+					</div> 
+				</div>
+				
+			<h2 style="text-align: center;font-size: 30px;text-decoration:underline;"> Indoor Swimming Pool </h2>
+			<p class="container" style="padding-bottom: 0px;font-size:18px;"> 
+				One of the 50 meters OLYMPIC swimming pool in Dublin, the outstanding design and mechanics allow to accommodate swimmers from all levels of ability by changing the depth of pool. <br>There are some benefits with the this tremendous and modern swimming pool :
+			</p>
+			<ol class="container">
+					<li>Fast, moderate and slow swimming lanes for all levels of swimming ability</li>
+					<li>Divided into leisure swimming and massive family swimming areas</li>
+					<li>Fun, purpose built toddler pool with fountains and sprinklers</li>
+					<li>UV treated water with super low chlorine levels, that makes you enjoy the swim without worrying about red eyes and body discomfort</li>
+					<li>Group and private swimming classes for beginners and intermediates</li>
+				</ol>
+			
+			
+			<div class="slideshow-container">
+				<div class="mySlides2">
+					<div class="numbertext">1 / 4</div>
+					<img src="media/swimming_pool1.jpg" style="width:100%" alt="swimming pool 1">
+				</div>
+
+				<div class="mySlides2">
+					<div class="numbertext">2 / 4</div>
+					<img src="media/swimming_pool2.jpg" style="width:100%" alt="swimming pool 2">
+				</div>
+
+				<div class="mySlides2">
+					<div class="numbertext">3 / 4</div>
+					<img src="media/swimming_pool3.jpg" style="width:100%" alt="swimming pool 3">
+				</div>
+				
+				<div class="mySlides2">
+					<div class="numbertext">4 / 4</div>
+					<img src="media/swimming_pool4.jpg" style="width:100%" alt="swimming pool 4">
+				</div>
+				
+				<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+			</div>
+			
+			<br>
+			
+			<p class="container" style="font-size:20px;"><strong>Interested in our fitness and swimming classes? Click here to see our schedules for the classes <a href="fitness-class-table.html" title="Fitness and Swimming Classes Timetables" style="text-decoration:none;color:blue;">here</a>.</strong></p>
+			
+			<h3 style="text-align: center;font-size: 25px;text-decoration:underline;"> Outdoor View </h3>
+			<p class="container"> The combination of modern architecture and natural greens.It will not only make you impress due to our advanced and tremendous club building, but also fresh mind and comfort environment from our green area. It is recommended to have an outdoor running, which allow you to enjoy the beauty of natural and also strengthen your body stamina</p>
+			
+			<div class="slideshow-container">
+				<div class="mySlides3">
+					<img src="media/outside-view.jpg" style="width:100%" alt="main entrance outdoor view 1">
+				</div>
+
+				<div class="mySlides3">
+					<img src="media/outside-view2.jpg" style="width:100%" alt="main entrance outdoor view 2">
+				</div>
+
+				<div class="mySlides3">
+					<img src="media/outside-view3.jpg" style="width:100%" alt="main entrance outdoor view at night">
+				</div>
+				
+				<div class="mySlides3">
+					<img src="media/outside-view4.jpg" style="width:100%" alt="main entrance outdoor view at night 2">
+				</div>
+				
+				<div class="mySlides3">
+					<img src="media/outside-view5.jpg" style="width:100%" alt="green path">
+				</div>
+				
+				<div class="mySlides3">
+					<img src="media/outside-view6.jpg" style="width:100%" alt="secret lake">
+				</div>
+				
+				<div class="mySlides3">
+					<img src="media/outside-view7.jpg" style="width:100%" alt="main lake 1">
+				</div>
+				
+				<div class="mySlides3">
+					<img src="media/outside-view8.jpg" style="width:100%" alt="main lake 2">
+				</div>
+				
+				<a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+			</div>
+			
+			<br><br>
+			<p class="container" style="font-size: 18px;">Wish to join our membership after watching so many nice picture of our club facilities and environment? Click <a href="membership.html" title="Purchase your membership here" style="text-decoration:none;color:blue;">here</a> to access to the web page to buy our membership online</p>
+			<br>
+			
+			<!-- JavaScript Function for multiple gallery slideshow -->
+			<script>
+				var slideIndex = [1,1,1];
+				var slideId = ["mySlides1", "mySlides2", "mySlides3"]
+					showSlides(1, 0);
+					showSlides(1, 1);
+					showSlides(1, 2);
+					
+				function plusSlides(n, no) {
+					showSlides(slideIndex[no] += n, no);
+				}
+
+				function showSlides(n, no) {
+					var i;
+					var x = document.getElementsByClassName(slideId[no]);
+					if (n > x.length) {slideIndex[no] = 1}    
+					if (n < 1) {slideIndex[no] = x.length}
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";  
+					}
+					x[slideIndex[no]-1].style.display = "block";  
+				}
+			</script>
+			
+			
+			
+			</section> <!--End of White Page-->
+		</div><!-- End of Content Page -->
+				
+				
+					<!--=====Footer=====-->
+					<footer>
+					<div class="row">
+						<div class="columns" id="footer-address">
+								<address>
+								Motivation Sport and Fitness Club, Churchtown Road, Dublin 8<br>
+								Tel: 0123456789
+								</address>
+						</div>
+							
+						<div class="columns" id="footer-opening-hours">
+								Opening Hours:<br>
+								Monday - Friday: 7AM - 10PM<br>Saturday - Sunday: 9AM - 8PM<br>Bank Holidays: 10AM - 8PM<br>
+						</div>
+						<div class="social-media-icon columns" id="social-media"> 
+							<!--Footer Icons link to the official social media page, and open in the new tab-->
+							<a href="https://www.facebook.com/" class="fa fa-facebook" target="_BLANK"></a>
+							<a href="https://twitter.com/" class="fa fa-twitter" target="_BLANK"></a>
+							<a href="https://www.instagram.com/" class="fa fa-instagram" target="_BLANK"></a>
+							<p style="font-size: 20px;">
+								&#169; <span id="copyright-year">2018 | </span>
+								<a href="privacypolicy.htm" id="privacy-policy" target="_BLANK">Privacy Policy</a>
+							</p>
+						</div>
+					</div>
+					</footer>
+			</body>
+	</html>                                                                                                                                                                                                                                                                  

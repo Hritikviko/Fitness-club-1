@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8"/>
+			<!-- Set the viewport of the page, which will give the browser instructions on how to control the page's dimensions and scalling-->
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!--Create an icon on the browser tab-->
+			<link rel="icon" type="image/x-icon" href="media/club_icon.png"/>
+			<title>Motivation Sport &amp; Fitness Club - Fitness and Swimming Class Timetable</title>
+			<!--link to the external style sheet called styles.css-->
+			<link rel="stylesheet" href="styles.css">
+			<!--link to the external JavaScript File called assignment_js.js
+			<script src="assignment_js.js"></script>-->
+			<!--Add in online icon library-->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			
+		<!--
+			========== HTML5 Browser Support ==========
+			- HTML5 defines eight new semantic elements (block-level elements)
+			- IE8 (or earlier versions) doesn't allow styling of unknown elements
+			- By using HTML5Shiv created by Sjoerd Visscher, which is a JavaScript workaround to enable styling of HTML5 elements in versions of Internet Explorer prior to version 9
+			- It provides compatibility for the IE Browsers older than IE 9
+		-->
+
+			<!--[if lt IE 9]>
+				<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<![endif]-->
+		
+		</head>
+			<body>
+				<!--===== Whole page section =====-->
+				<div class="page" id="whole_page">
+					<!--===============================
+								Header Section
+					=================================-->
+					<!--Testing for the fixed header-->
+					<header class="page-header">
+						<section class="header-background">
+						<div class="border-header" id="border-header">
+							<div class="left-header" id="icon_link_homepage">
+								<!--Create a header icon with home page link at the left hand side-->
+								<a href="main_page.html" title="Back to Home Page">
+									<img src="media/MotivationLogo.png" alt="Motivation Sport & Fitness Club" id="logo"/>
+								</a>
+							</div>
+							<!--Create a Contact with tel and email-->
+							<div class="right-header" id="contact_info">
+									<div style="color:white;">
+										<br>
+										<h4 style="margin-bottom:10px;">Contact:</h4>
+										Tel:<a href="tel:01-23456789" id="contact-number" title="Tel">01-23456789</a> | <a href="mailto:motivation@sportandfitness.ie" id="email" title="Email">motivation@sportandfitness.ie</a>
+									</div>
+							</div>
+						</div>
+						</section>
+					</header>
+					<!--=====End of header setting=====-->
+					
+					<!--=====Navigation Start=====-->
+						<div class="navigation" id="navigation_menu">
+							<a href="main_page.html" accesskey="h">Home Page</a>
+							<a href="gallery.html" accesskey="g">Gallery</a>
+							<a href="fitness-class-table.html" accesskey="f">Fitness Class Timetable</a>
+							<a href="location.html" accesskey="l">Location</a>
+							<a href="membership.html" accesskey="m">Membership</a>
+							<a href="contact_us.html" accesskey="c">Contact Us</a> 
+						</div>
+					<!--======Navigation End=====-->
+					
+				<!--Web Page Title-->
+				<section class="background-blank-page">
+					<h2 id="top-title"><b>Motivation Sport and Fitness Club</b></h2>
+					
+					<!--====== Fitness Class Timetable ======-->
+					
+					<div class="container">
+						<p style="font-size:18px;">
+							<b>**NOTE : All the Fitness and Swimming Class below HAS TO BE BOOKED</b><br>
+							To book any of the fitness class below, please call: <strong>01 23456789</strong> or email: <a href="mailto:motivation@sportandfitness.ie" id="email" title="Email" style="color:blue;">motivation@sportandfitness.ie</a>
+						</p>
+					
+						<p style="font-size:17px;">Other than that, we also accept booking through our facebook home page.
+						<br>- If you are member, we just need <b><span style="color:red;">YOUR NAME and MEMBERSHIP NUMBER</span></b> to book for a place.
+						<br>- However if you are not, we will require <b> <span style="color:red;">YOUR NAME, MOBILE PHONE NUMBER and IDENTITY NUMBER</span></b>
+						</p>
+					</div>
+					
+					<h3 id="fitness-class">Fitness Classes Timetable</h3>
+					
+					<table id="fitness-class-timetable">
+						<tr> <!-- First Row of table : Opening Hours -->
+							<th colspan="4" style="background-color:#ff704d;">Monday to Friday - 7am to 10pm | Saturday - Sunday: 9AM - 8PM | Bank Holidays: 10AM - 8PM</th>
+						</tr>
+						
+						<tr> <!-- Second Row : Table Header : Time, Class and Class Duration -->
+							<th scope="col">7-day of a week</th>
+							<th scope="col">Time</th>
+							<th scope="col">Class</th>
+							<th scope="col">Duration</th>
+						</tr>
+						
+						<!-- Remanding Row : the information of classes, time and duration in everyday -->
+						<tr> 
+							<th scope="row" rowspan="6">Monday</th>
+							<td>7.30am</td>
+							<td>Spin Express</td>
+							<td>30 mins</td>
+						</tr>
+						
+						<tr>
+							<td>1.30pm</td>
+							<td>Body Sculpt</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr>
+							<td>5.00pm</td>
+							<td>Functional Training</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr>
+							<td>6.00pm</td>
+							<td>HIIT Circuit Workout</td>
+							<td>30 mins</td>
+						</tr>
+						
+						<tr>
+							<td>7.00pm</td>
+							<td>Spinning</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr>
+							<td>8.00pm</td>
+							<td>Dance</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr> 
+							<th scope="row" rowspan="6">Tuesday</th>
+							<td>7.30am</td>
+							<td>Kettlebell & TRX</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>10.00am</td>
+							<td>HIIT Circuit Workout</td>
+							<td>30 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>12.00pm</td>
+							<td>ABS</td>
+							<td>30 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>2.00pm</td>
+							<td>Spinning</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>4.00pm</td>
+							<td>Functional Training</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>7.00pm</td>
+							<td>Pilates</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr> 
+							<th scope="row" rowspan="6">Wednesday</th>
+							<td>7.30am</td>
+							<td>Functional Training</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>9.30am</td>
+							<td>Spinning</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>12.00pm</td>
+							<td>ABS</td>
+							<td>30 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>2.00pm</td>
+							<td>Functional Traning</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>4.30pm</td>
+							<td>Tabata Cardio Workout</td>
+							<td>30 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>7.30pm</td>
+							<td>Beginner Yoga</td>
+							<td>60 mins</td>
+						</tr>
+						
+						<tr> 
+							<th scope="row" rowspan="6">Thursday</th>
+							<td>7.30am</td>
+							<td>HIIT Circuit Workout</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>9.30am</td>
+							<td>ABS</td>
+							<td>30 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>12.00pm</td>
+							<td>Functioal Training</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>2.30pm</td>
+							<td>Kettlebell & TRX</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>4.30pm</td>
+							<td>Functioal Training</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>7.00pm</td>
+							<td>Pilates</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr> 
+							<th scope="row" rowspan="6">Friday</th>
+							<td>7.30am</td>
+							<td>Spin Express</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>10.00am</td>
+							<td>Kettlebell & TRX</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>12.00pm</td>
+							<td>Pilates</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>2.30pm</td>
+							<td>Tabata Cardio Workout</td>
+							<td>30 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>5.00pm</td>
+							<td>Functional Training</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>7.45pm</td>
+							<td>Beginner Yoga</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr> 
+							<th scope="row" rowspan="4">Saturday</th>
+							<td>10.00am</td>
+							<td>Yogalates</td>
+							<td>60 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>12.00pm</td>
+							<td>Body Sculpt</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>2.15pm</td>
+							<td>Spinning</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>4.30pm</td>
+							<td>Beginner Yoga</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr> 
+							<th scope="row" rowspan="4">Sunday</th>
+							<td>10.00am</td>
+							<td>Functional Training</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>12.15pm</td>
+							<td>Yogalates</td>
+							<td>60 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>3.30pm</td>
+							<td>Body Sculpt</td>
+							<td>45 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>5.30pm</td>
+							<td>Spinning</td>
+							<td>60 mins</td>
+						</tr>
+						
+					</table>
+					
+					<h3 id="swimming-class">Swimming Classes Timetable</h3>
+					
+					
+						<h4 class="container" style="font-size:18px;">
+							Swimming Pool Entrance Fees:<br>(For OPEN SWIM and NON-MEMBER only)<br>[ Children : Below 16 years old ]<br>[ Family Package : 2 Adults and 2 Children ]
+						</h4>
+						<table id="swimming-entrance-fee">
+							<tr>
+								<th></th>
+								<th scope="col">Weekday</th>
+								<th scope="col">Weekend</th>
+							</tr>
+							
+							<tr>
+								<th scope="row">Adult</th>
+								<td>&euro; 5.00</td>
+								<td>&euro; 7.00</td>
+							</tr>
+							
+							<tr>
+								<th scope="row">Children</th>
+								<td>&euro; 3.00</td>
+								<td>&euro; 5.00</td>
+							</tr>
+							
+							<tr>
+								<th scope="row">Family Package</th>
+								<td>&euro; 14.00</td>
+								<td>&euro; 20.00</td>
+							</tr>
+							
+						</table>
+					
+					<table id="swimming-class-timetable">
+						<tr> <!-- First Row of table : Opening Hours -->
+							<th colspan="4" style="background-color:#ff704d;color:white;">Monday to Friday - 7am to 10pm | Saturday - Sunday: 9AM - 8PM | Bank Holidays: 10AM - 8PM</th>
+						</tr>
+						
+						<tr> <!-- Second Row : Table Header : Time, Class and Class Duration -->
+							<th scope="col">7-day of a week</th>
+							<th scope="col">Time</th>
+							<th scope="col">Class</th>
+							<th scope="col">Duration</th>
+						</tr>
+						
+						<!-- Remanding Row : the information of classes, time and duration in everyday -->
+						<tr> 
+							<th scope="row" rowspan="2">Monday</th>
+							<td>4.00pm</td>
+							<td>Swimming Class for Beginners</td>
+							<td>120 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>7.00pm</td>
+							<td>Swimming Class for Intermediates</td>
+							<td>120 mins</td>
+						</tr>
+						
+						<tr> 
+							<th scope="row" rowspan="2">Tuesday</th>
+							<td>10.00am</td>
+							<td>Aqua Aerobics</td>
+							<td>60 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>7.00pm</td>
+							<td>Kayak Training</td>
+							<td>120 mins</td>
+						</tr>
+						
+						<tr> 
+							<th scope="row" rowspan="2">Wednesday</th>
+							<td>4.00pm</td>
+							<td>Swimming Class for Beginners</td>
+							<td>120 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>7.00pm</td>
+							<td>Swimming Class for Intermediates</td>
+							<td>120 mins</td>
+						</tr>
+						
+						<tr> 
+							<th scope="row" rowspan="2">Thursday</th>
+							<td>10.00am</td>
+							<td>Aqua Aerobics</td>
+							<td>60 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>7.00pm</td>
+							<td>Kayak Training</td>
+							<td>90 mins</td>
+						</tr>
+						
+						<tr> 
+							<th scope="row" rowspan="2">Friday</th>
+							<td>5.00pm</td>
+							<td>Swimming Class for Beginners</td>
+							<td>120 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>7.00pm</td>
+							<td>Swimming Class for Intermediates</td>
+							<td>120 mins</td>
+						</tr>
+						
+						<tr> 
+							<th scope="row" rowspan="2">Saturday</th>
+							<td>11.00am</td>
+							<td>Aqua Aerobics</td>
+							<td>60 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>7.00pm</td>
+							<td>Swimming Class for Adults</td>
+							<td>120 mins</td>
+						</tr>
+						
+						<tr> 
+							<th scope="row" rowspan="2">Sunday</th>
+							<td>11.00am</td>
+							<td>Aqua Aerobics</td>
+							<td>60 mins</td>
+						</tr>
+						
+						<tr> 
+							<td>7.00pm</td>
+							<td>Swimming Class for Adults</td>
+							<td>120 mins</td>
+						</tr>
+						
+						<tr> <!-- Last Row of table : All the other opening time is open swim, which means you can swim as long as you can between that time-->
+							<th colspan="4" style="background-color:#ff3333;font-size: 18px;padding: 10px 16px;text-align: left;color:white;">**NOTE: 
+								<br>1. All the remaining opening time is for OPEN SWIM, that you can swim as long as you can
+								<br>2. Children <strong>UNDER 10 YEARS OLD</strong> must be accompanied by an adult 
+							</th>
+						</tr>
+					</table>
+				</section> <!--End of White Page-->
+			</div><!-- End of Content Page -->
+				
+				
+					<!--=====Footer=====-->
+					<footer>
+					<div class="row">
+						<div class="columns" id="footer-address">
+								<address>
+								Motivation Sport and Fitness Club, Churchtown Road, Dublin 8<br>
+								Tel: 0123456789
+								</address>
+						</div>
+							
+						<div class="columns" id="footer-opening-hours">
+								Opening Hours:<br>
+								Monday - Friday: 7AM - 10PM<br>Saturday - Sunday: 9AM - 8PM<br>Bank Holidays: 10AM - 8PM<br>
+						</div>
+						<div class="social-media-icon columns" id="social-media"> 
+							<!--Footer Icons link to the official social media page, and open in the new tab-->
+							<a href="https://www.facebook.com/" class="fa fa-facebook" target="_BLANK"></a>
+							<a href="https://twitter.com/" class="fa fa-twitter" target="_BLANK"></a>
+							<a href="https://www.instagram.com/" class="fa fa-instagram" target="_BLANK"></a>
+							<p style="font-size: 20px;">
+								&#169; <span id="copyright-year">2018 | </span>
+								<a href="privacypolicy.htm" id="privacy-policy" target="_BLANK">Privacy Policy</a>
+							</p>
+						</div>
+					</div>
+					</footer>
+			</body>
+	</html>

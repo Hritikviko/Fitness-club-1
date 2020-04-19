@@ -1,0 +1,188 @@
+<!--COMP 20030 Web Design Assignment-->
+<!--The home page of a fitness club/group-->
+
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8"/>
+			<!-- Set the viewport of the page, which will give the browser instructions on how to control the page's dimensions and scalling-->
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!--Create an icon on the browser tab-->
+			<link rel="icon" type="image/x-icon" href="media/club_icon.png"/>
+			<title>Motivation Sport &amp; Fitness Club - Home Page</title>
+			<!--link to the external style sheet called styles.css-->
+			<link rel="stylesheet" href="styles.css">
+			<!--Add in online icon library-->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			
+		<!--
+			========== HTML5 Browser Support ==========
+			- HTML5 defines eight new semantic elements (block-level elements)
+			- IE8 (or earlier versions) doesn't allow styling of unknown elements
+			- By using HTML5Shiv created by Sjoerd Visscher, which is a JavaScript workaround to enable styling of HTML5 elements in versions of Internet Explorer prior to version 9
+			- It provides compatibility for the IE Browsers older than IE 9
+		-->
+
+			<!--[if lt IE 9]>
+				<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<![endif]-->
+		
+		</head>
+			<body>
+				<!--===== Whole page section =====-->
+				<div class="page" id="whole_page">
+					<!--===============================
+								Header Section
+					=================================-->
+					<!--Testing for the fixed header-->
+					<header class="page-header">
+						<section class="header-background">
+						<div class="border-header" id="border-header">
+							<div class="left-header" id="icon_link_homepage">
+								<!--Create a header icon with home page link at the left hand side-->
+								<a href="main_page.html" title="Back to Home Page">
+									<img src="media/MotivationLogo.png" alt="Motivation Sport & Fitness Club" id="logo"/>
+								</a>
+							</div>
+							<!--Create a Contact with tel and email-->
+							<div class="right-header" id="contact_info">
+									<div style="color:white;">
+										<br>
+										<h4 style="margin-bottom:10px;">Contact:</h4>
+										Tel:<a href="tel:01-23456789" id="contact-number" title="Tel">01-23456789</a> | <a href="mailto:motivation@sportandfitness.ie" id="email" title="Email">motivation@sportandfitness.ie</a>
+									</div>
+							</div>
+						</div>
+						</section>
+					</header>
+					<!--=====End of header setting=====-->
+					
+					<!--=====Navigation Start=====-->
+						<div class="navigation" id="navigation_menu">
+							<a href="main_page.html" accesskey="h">Home Page</a>
+							<a href="gallery.html" accesskey="g">Gallery</a>
+							<a href="fitness-class-table.html" accesskey="f">Fitness Class Timetable</a>
+							<a href="location.html" accesskey="l">Location</a>
+							<a href="membership.html" accesskey="m">Membership</a>
+							<a href="contact_us.html" accesskey="c">Contact Us</a> 
+						</div>
+					<!--======Navigation End=====-->
+						
+					<!--===== Web Page Title ======-->
+					<section class="background-blank-page">
+						<h2 id="top-title"><b>Welcome to Motivation Sport and Fitness!</b></h2>
+					
+						<!--Video link from Youtube to encourage to do regular exercise by using <iframe> tag-->
+						<div class="intro-video"> <!--Minimize Problem-->
+							<p style="font-size : 30px; font-weight : bold;">The Importance Of Regular Exercise</p>
+								<iframe src="https://www.youtube.com/embed/L3iLPrkIr9E?rel=0" frameborder="0" allowfullscreen></iframe>
+							<p style="font-size : 30px; font-weight : bold;">What Happens To Your Body When You Start Exercising Regularly?</p>
+								<iframe src="https://www.youtube.com/embed/rBUjOY12gJA?rel=0" frameborder="0" allowfullscreen></iframe>
+						</div>
+						
+					<!--===== Contents =====-->
+					
+					<!-- 1st Part Content : Gallery -->
+					<div class="rows">
+						<div class="column text-content-border">
+							<h4 class="home-content-title">Welcome to Motivation Sport &amp; Fitness Club!</h4>
+								<p class="home-content">At the club, we found that there are various reasons for joining. Our team is willing to help you to achieve your goals and discover your max potential. We have a nice environment and advanced facilities to let you improve yourself efficiently and enjoy the time here.</p>
+								<a href="gallery.html" title="Have some view here, it will impress you!">
+									<div class="button"><span>Gallery</span></div>
+								</a>
+							</div>
+						<div class="column">
+							<img id="gym_interior" src="media/gym.png" alt="Interior of the gym"/>
+						</div>
+					</div>
+					
+					<!-- 2nd Part Content : Fitness Class Timetable -->
+					<div class="rows">
+						<div class="column">
+							<img id="trainer-with-trainee" src="media/trainer1.jpg" alt="Trainer is guiding his trainees during the fitness class"/>
+						</div>
+						<div class="column text-content-border">
+							<h4 class="home-content-title">Training With Motivation Sport and Fitness Club</h4>
+								<p class="home-content">We are having more than 40 fitness classes and swimming classes with different kind of training method, that will makes you feel novel and </p>
+								
+							<a href="fitness-class-table.html" title="Timetable for fitness and swimming classes">
+								<div class="button2"><span>Timetable</span></div>
+							</a>
+						</div>
+					</div>
+					
+					
+					<!-- 3th Part Content -->
+					<div class="rows">
+						<div class="column text-content-border">
+							<h4 class="home-content-title">Our Club Location</h4>
+								<p class="home-content">From the information given above, do you feel like interested with us, but don't know where we are? Here is our location that will lead you to our <b>FREE CAR PARK</b> and have a good day here!</p>
+								<a href="gallery.html" title="Follow the given way, and you will be here soon!">
+									<div class="button"><span>Location</span></div>
+								</a>
+							</div>
+						<div class="column">
+							<img id="main-entrance" src="media/outside-view2.jpg" alt="Our building's main entrance"/>
+						</div>
+					</div>
+					
+					<!-- 4nd Part Content: Membership -->
+					<div class="rows">
+						<div class="column">
+							<img id="trainer-trainee" src="media/trainer_home_page.jpg" alt="Trainer is guiding the exercise of his trainee"/>
+						</div>
+						<div class="column text-content-border">
+							<h4 class="home-content-title">We are looking forward for your joining!<br>Welcome to our big family! </h4>
+								<p class="home-content">No matter what kind of reason you come here for training, we will do our very best to satisfy your specific needs &amp; help you to achieve your goals. We want you to make changes that will last, with the combination of healthy &amp; balanced lifestyle choices that are sustainable. We have professional trainers here to help you to combat all the issues and reach your final target, so <b>JOIN US NOW!</b> </p>
+								
+							<a href="membership.html" title="Join Us Now! You will not regret for it.">
+								<div class="button2"><span>Membership</span></div>
+							</a>
+						</div>
+					</div>
+					
+					<!-- Last Part Content: Contact Us -->
+					<div class="rows">
+						<div class="column text-content-border">
+							<h4 class="home-content-title">Questions &amp; Suggestion : </h4>
+								<p class="home-content">If you have any problem or suggestion on our facilities and services, please do not hesitate to tell us. It will not only allow us to help you on your questions, but your creative idea also encourage us to make improvement with each other too!</p>
+								
+								<a href="contact_us.html" title="You are welcome to contact us in every opening hours">
+									<div class="button"><span>Contact Us</span></div>
+								</a>
+						</div>
+						<div class="column">
+							<img id="fitness-team-trainer" src="media/trainer4.jpg" alt="our fitness team trainer"/>
+						</div>
+					</div>
+					
+					</section> <!--End of White Page-->
+				</div><!-- End of Content Page -->
+
+				<footer>
+					<div class="row">
+						<div class="columns" id="footer-address">
+								<address>
+								Motivation Sport and Fitness Club, Churchtown Road, Dublin 8<br>
+								Tel: 0123456789
+								</address>
+						</div>
+							
+						<div class="columns" id="footer-opening-hours">
+								Opening Hours:<br>
+								Monday - Friday: 7AM - 10PM<br>Saturday - Sunday: 9AM - 8PM<br>Bank Holidays: 10AM - 8PM<br>
+						</div>
+						<div class="social-media-icon columns" id="social-media"> 
+							<!--Footer Icons link to the official social media page, and open in the new tab-->
+							<a href="https://www.facebook.com/" class="fa fa-facebook" target="_BLANK"></a>
+							<a href="https://twitter.com/" class="fa fa-twitter" target="_BLANK"></a>
+							<a href="https://www.instagram.com/" class="fa fa-instagram" target="_BLANK"></a>
+							<p style="font-size: 20px;">
+								&#169; <span id="copyright-year">2018 | </span>
+								<a href="privacypolicy.htm" id="privacy-policy" target="_BLANK">Privacy Policy</a>
+							</p>
+						</div>
+					</div>
+					</footer>
+			</body>
+	</html>                                                                                                                                                                                                                                                                  
